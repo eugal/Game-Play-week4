@@ -6,7 +6,7 @@ import org.flixel.FlxState;
 import org.flixel.FlxText;
 import org.flixel.FlxGroup;
 
-class Screen2 extends FlxState {
+class Screen4 extends FlxState {
 
 	var player:Player;
 	var enemies:FlxGroup;
@@ -78,7 +78,7 @@ class Screen2 extends FlxState {
 	public function hitPlayer(p1:Player, ebullet:EnemyBullet):Void {
 		p1.kill();
 		ebullet.kill();
-		FlxG.switchState(new Screen2());
+		FlxG.switchState(new Screen4());
 	}
 
 
